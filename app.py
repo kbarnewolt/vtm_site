@@ -21,8 +21,14 @@ def add():
         radius = int(request.form['radius'])
         height = int(request.form['height'])
         area_top = 3.14 * (radius * radius)
-        print(area_top)
-    return render_template('estimate.html', myValue = area_top)
+        area_side = 2 * (3.14 * (radius * height))
+        total_area = area_top + area_side
+        total_area_sq = total_area/144
+        material_cost = total_area_sq * 25
+        labor_cost = total_area_sq * 15
+        total_price = material_cost + labor_cost
+        print(total_price)
+    return render_template('estimate.html', myValue = area_side)
 
 if __name__ == '__main__':
     app.run(debug=True)

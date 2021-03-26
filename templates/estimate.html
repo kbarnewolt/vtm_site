@@ -9,12 +9,12 @@
 <form action="/add" method="POST">
 
     <label for="radius">
-        Radius:
+        Radius (inches):
         <input type="text" id="radius" name="radius" required autofocus/>
     </label>
     <br><br>
     <label for="height">
-        Height: <input type="text" id="height" name="height" required/>
+        Height (inches): <input type="text" id="height" name="height" required/>
         <br><br>
     </label>
 
@@ -24,7 +24,7 @@
 </form>
 
 {% if myValue %}
-<p>The sum of the two numbers is: {{ myValue }}</p>
+<p>The total cost = ${{ myValue }}</p>
 {% endif %}
 
 {% endblock %}
