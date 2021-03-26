@@ -1,10 +1,35 @@
 {% extends 'base.html' %}
 
-{% block title %} Welcome to the home page {% endblock %}
+{% block title %} Welcome to the home page{% endblock %}
 
 
-<img src="./photos/above_ground_vertical_tanks.jpg" width="200" alt="Photo of Tanks"> 
+{% block body %} Hello world!
 
-{% block body %} Hello world! {% endblock %}
+<body>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="./about">About</a></li>
+                <li><a href="./estimate">Estimate</a></li>
+                <li><a href="./index">Index</a></li>
+            </ul>
+        </nav>
+        <section>
+            <img src="./photos/tanks.jpg" width="200" alt="Photo of tanks">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur augue nunc, rutrum nec tristique
+                vitae, condimentum non lectus. Phasellus ut tellus tempus velit dignissim tempus. Suspendisse potenti.
+                In orci est, pharetra et justo ac, faucibus porta nibh. Praesent pellentesque odio lorem, ac euismod
+                lectus consectetur id. Proin eget nulla a libero ullamcorper lacinia nec vitae libero. Morbi consectetur
+                dapibus nibh, in porta ligula vestibulum id. Nulla ullamcorper placerat eleifend.
 
 
+
+            </p>
+        </section>
+    </main>
+</body>
+
+
+
+{% endblock %}

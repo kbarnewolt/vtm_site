@@ -6,6 +6,25 @@
 {% block body %}
 
 <h2>Estimate Calculator</h2>
+<form action="/add" method="POST">
 
+    <label for="radius">
+        Radius:
+        <input type="text" id="radius" name="radius" required autofocus/>
+    </label>
+    <br><br>
+    <label for="height">
+        Height: <input type="text" id="height" name="height" required/>
+        <br><br>
+    </label>
+
+    <input type="submit" value="Add">
+
+
+</form>
+
+{% if myValue %}
+<p>The sum of the two numbers is: {{ myValue }}</p>
+{% endif %}
 
 {% endblock %}
