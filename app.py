@@ -15,7 +15,7 @@ def about():
 def estimate():
     return render_template('estimate.html')
 
-@app.route('/add', methods=['POST'])
+@app.route('/calculate', methods=['POST'])
 def add():
     if request.method == 'POST':
         radius = int(request.form['radius'])
@@ -28,7 +28,7 @@ def add():
         labor_cost = total_area_sq * 15
         total_price = material_cost + labor_cost
         print(total_price)
-    return render_template('estimate.html', myValue = area_side)
+    return render_template('estimate.html', myValue = total_price)
 
 if __name__ == '__main__':
     app.run(debug=True)

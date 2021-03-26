@@ -2,20 +2,32 @@
 
 {% block title %} Welcome to the home page{% endblock %}
 
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block body %} Hello world!
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="./">Home</a></li>
+            <li><a href="./about">About</a></li>
+            <li><a href="./estimate">Estimate</a></li>
+        </ul>
+    </nav>
+</header>
 
 <body>
+
     <main>
-        <nav>
-            <ul>
-                <li><a href="./about">About</a></li>
-                <li><a href="./estimate">Estimate</a></li>
-                <li><a href="./index">Index</a></li>
-            </ul>
-        </nav>
+
         <section>
-            <img src="./photos/tanks.jpg" width="200" alt="Photo of tanks">
+            <h2>Welcome to VTM!</h2>
+            <img src="./tanks.jpg" width="200" alt="Photo of tanks">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur augue nunc, rutrum nec tristique
                 vitae, condimentum non lectus. Phasellus ut tellus tempus velit dignissim tempus. Suspendisse potenti.
