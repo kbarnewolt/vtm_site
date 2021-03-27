@@ -27,7 +27,7 @@ def add():
         material_cost = total_area_sq * 25
         labor_cost = total_area_sq * 15
         total_price = material_cost + labor_cost
-        print(total_price)
+        print(total_price) 
     return render_template('estimate.html', myValue = total_price)
 
 if __name__ == '__main__':
